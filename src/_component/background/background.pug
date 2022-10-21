@@ -2,6 +2,7 @@ mixin superBg(section)
   -
     var { id, who, text, link } = section
   .background(
+    id=id
     style=`
       --bgi-mobile: url(${baseUrl}asset/image/background/${id}-mobile.jpg);
       --bgi-desktop: url(${baseUrl}asset/image/background/${id}.jpg);
@@ -14,7 +15,7 @@ mixin superBg(section)
         .text= text
       if link 
         a.link(
-          title=`${link} ${text}`
+          title=`${text} ${link}`
           href=`#${id}`
         )= link
 
