@@ -4,8 +4,9 @@ block awesome-content
   include _component/background/background
   include _component/text/text
   include _component/panel/panel
+  include _component/button/button
 
   - var { sectionList } = data.site
 
-  each section in sectionList
-    +superBg(section)
+  each section, key in sectionList
+    +superBg(section, sectionList[key < sectionList.length -1 ? key + 1 : 0].id)
