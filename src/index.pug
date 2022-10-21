@@ -1,4 +1,9 @@
 extends _component/layout/base
 
 block awesome-content
-  //- include _component/test/test
+  include _component/background/background
+
+  - var { sectionList } = data.site
+
+  each section in sectionList
+    +superBg(section)

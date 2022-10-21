@@ -1,1 +1,15 @@
-message: "Today the weather is very nice."
+sectionList:
+  - who: Model 3
+    id: model-3
+  - who: Model y
+    id: model-y
+  - who: Model s
+    id: model-s
+  - who: Model x
+    id: model-x
+  - who: Solar panels
+    id: solar-panels
+  - who: Solar roof
+    id: solar-roof
+  - who: Accessories
+    id: accessories
