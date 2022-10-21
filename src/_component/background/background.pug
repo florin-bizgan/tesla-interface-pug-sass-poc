@@ -1,13 +1,21 @@
 mixin superBg(section)
   -
-    var { id, who } = section
+    var { id, who, text, link } = section
   .background(
+    id=id
     style=`
       --bgi-mobile: url(${baseUrl}asset/image/background/${id}-mobile.jpg);
       --bgi-desktop: url(${baseUrl}asset/image/background/${id}.jpg);
     `
   )
-    h1.za-panou= who
+    .panel
+      h1.title= who
 
-    .za-footer I exist, therefore I am
+      if text 
+        .text= text
+      if link 
+        a.link(
+          title=`${text} ${link}`
+          href=`#${id}`
+        )= link
 
