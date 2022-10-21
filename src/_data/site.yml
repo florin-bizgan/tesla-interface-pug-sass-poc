@@ -1,15 +1,31 @@
 sectionList:
   - who: Model 3
+    text: Order online for
+    link: Touchless delivery
     id: model-3
+
   - who: Model y
+    text: Order online for
+    link: Touchless delivery
     id: model-y
+
   - who: Model s
+    text: Order online for
+    link: Touchless delivery
     id: model-s
+
   - who: Model x
+    text: Order online for
+    link: Touchless delivery
     id: model-x
+
   - who: Solar panels
+    text: Lowest Cost Solar Panels in America
     id: solar-panels
+
   - who: Solar roof
+    text: Produce Clean Energy From Your Roof
     id: solar-roof
+
   - who: Accessories
     id: accessories
