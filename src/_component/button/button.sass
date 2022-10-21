@@ -1,0 +1,50 @@
+.button
+  &--dark,
+  &--light
+    width: 256px
+    height: 40px
+
+    border: 0
+    border-radius: $border-radius
+    transition: 250ms
+    text-transform: uppercase
+    font-size: 14px
+    cursor: pointer
+
+  &__icon--up,
+  &__icon--down
+    transition: 250ms
+    align-self: center
+    fill: $color-shark
+    border-radius: 50%
+
+    width: 48px
+    height: 48px
+
+  &__icon--down
+    cursor: s-resize
+
+  &__icon--up
+    cursor: n-resize
+    transform: rotate(180deg)
+
+  &__icon--up:hover,
+  &__icon--down:hover
+    background-color: $color-shark
+    fill: $color-mercury
+
+  &--dark
+    background-color: $color-shark
+    color: $color-light
+
+  &--dark:hover
+    background-color: $color-mercury
+    color: $color-dark
+
+  &--light
+    background-color: $color-mercury
+    color: $color-dark
+
+  &--light:hover
+    background-color: $color-shark
+    color: $color-light

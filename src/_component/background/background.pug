@@ -1,6 +1,6 @@
-mixin superBg(section)
+mixin superBg(section, goTo)
   -
-    var { id, who, text, link } = section
+    var { id, who, text, link, buttonList } = section
   .background(
     id=id
     style=`
@@ -19,3 +19,19 @@ mixin superBg(section)
           href=`#${id}`
         )= link
 
+    .box__large
+      if buttonList
+        .box__small
+          each button, key in buttonList
+            button(
+              class=`button--${ key ? 'light' : 'dark'}`
+            )= button
+        a.button__icon--down(
+          href=`#${goTo}`
+        )
+          +chevron()
+      else
+        a.button__icon--up(
+          href=`#${goTo}`
+        )
+          +chevron()

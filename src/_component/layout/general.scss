@@ -25,3 +25,23 @@ body {
 
 .content {
 }
+
+%box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  &__small {
+    gap: 16px;
+
+    @extend %box;
+  }
+
+  &__large {
+    gap: 48px;
+
+    @extend %box;
+  }
+}
