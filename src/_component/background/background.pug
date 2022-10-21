@@ -1,0 +1,13 @@
+mixin superBg(section)
+  -
+    var { id, who } = section
+  .background(
+    style=`
+      --bgi-mobile: url(${baseUrl}asset/image/background/${id}-mobile.jpg);
+      --bgi-desktop: url(${baseUrl}asset/image/background/${id}.jpg);
+    `
+  )
+    h1.za-panou= who
+
+    .za-footer I exist, therefore I am
+
