@@ -22,7 +22,7 @@
   },
   "config": {
     "customUrl": "http://pug-starter.codetap.academy",
-    "githubUrl": "http://github.com/wowdop/tesla-interface-pug-sass-poc.git",
+    "githubUrl": "https://github.com/florin-bizgan/tesla-interface-pug-sass-poc.git",
     "deployToGithubIo": true,
     "directory": {
       "development": "tmp",
